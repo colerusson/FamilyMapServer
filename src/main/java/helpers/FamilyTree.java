@@ -36,7 +36,7 @@ public class FamilyTree {
             JsonArray nameArray = (JsonArray)rootObj.get("data");
 
             for(int i = 0; i < nameArray.size(); ++i) {
-                femaleNames.add(nameArray.get(i).toString());
+                femaleNames.add(nameArray.get(i).getAsString());
             }
         }
     }
@@ -51,7 +51,7 @@ public class FamilyTree {
 
             JsonArray nameArray = (JsonArray)rootObj.get("data");
             for(int i = 0; i < nameArray.size(); ++i) {
-                maleNames.add(nameArray.get(i).toString());
+                maleNames.add(nameArray.get(i).getAsString());
             }
         }
     }
@@ -66,7 +66,7 @@ public class FamilyTree {
 
             JsonArray nameArray = (JsonArray)rootObj.get("data");
             for(int i = 0; i < nameArray.size(); ++i) {
-                lastNames.add(nameArray.get(i).toString());
+                lastNames.add(nameArray.get(i).getAsString());
             }
         }
     }
