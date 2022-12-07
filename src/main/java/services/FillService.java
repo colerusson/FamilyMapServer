@@ -175,7 +175,7 @@ public class FillService {
             Event birth = familyTree.generateEvent(DOB, username, person.getPersonID(), "birth");
             eDao.insert(birth);
 
-            Event death = familyTree.generateEvent(DOB, username, person.getPersonID(), "death");
+            Event death = familyTree.generateEvent(DOB+22, username, person.getPersonID(), "death");
             eDao.insert(death);
             eventsAdded+=2;
         }
@@ -187,7 +187,7 @@ public class FillService {
             Event birth = familyTree.generateEvent(DOB, username, person.getPersonID(), "birth");
             eDao.insert(birth);
 
-            Event death = familyTree.generateEvent(DOB, username, person.getPersonID(), "death");
+            Event death = familyTree.generateEvent(DOB+22, username, person.getPersonID(), "death");
             eDao.insert(death);
             eventsAdded+=2;
         }
